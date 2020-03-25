@@ -7,6 +7,13 @@ spring:
     password: 123456
 
 mybatis:
-    mapper-locations:
-      - classpath : mapper/*.xml
-      - classpath* : com/**/mapper/*.xml
+  mapper-locations:
+    - classpath:mapper/*.xml
+    - classpath*:com/**/mapper/*.xml
+security:
+  basic:
+    enabled: true
+    path: /swagger-ui.html
+  user:
+    name: admin
+    password: admin
